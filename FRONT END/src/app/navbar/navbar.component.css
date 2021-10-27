@@ -1,0 +1,26 @@
+/* nav bar*/
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+.iconsocial a i{
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:hover ,
+.iconsocial a i:hover,
+.navbar-light .navbar-nav .nav-link.act
+{
+    color:  #f25454;
+}
+@media all and (max-width:575px) {
+    .navbar-light .navbar-nav .nav-link {
+        color: #000;
+    }
+    .navbar-light .navbar-nav{
+        background: #fff;
+    }
+}
+

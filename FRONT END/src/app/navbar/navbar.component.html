@@ -1,0 +1,41 @@
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top d-flex flex-column" style="background-color: #222;">
+      <div class="container mt-1">
+            <a class="navbar-brand" routerLink="home">
+              <img src="../../assets/images/qq3.jpeg" class=" rounded-circle " style="height: 40px; width: 40px;" alt="logo">
+            </a>
+            <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto my-1 d-flex justify-content-around  w-100 ">
+                      
+                      <li class="nav-item px-3">
+                        <a *ngIf='isLogin' class="nav-link act" routerLink="home">Home</a>
+                      </li>
+                      <li class="nav-item px-3">
+                          <a *ngIf='isLogin'  class="nav-link" routerLink="profile">Profile</a>
+                      </li> 
+                      <li class="nav-item px-3">
+                          <a *ngIf='!isLogin' class="nav-link" routerLink="login">Login</a>
+                      </li>
+                      <li class="nav-item px-3">
+                          <a *ngIf='!isLogin' class="nav-link" routerLink="register">Register</a> 
+                      </li> 
+                      <li class="nav-item px-3">
+                          <a *ngIf='isLogin' (click)="logoutss()" class="nav-link" >Logout</a>
+                      </li>
+                        <li class="nav-item d-flex justify-content-center align-items-center  mr-3 ml-0">
+                            <div class="iconsocial text-light">
+                              <a routerLink="home" title="Twitter"><i class="fab fa-twitter  px-2"></i></a>
+                              <a routerLink="home" title="Facebook"><i class="fab fa-facebook  px-2"></i></a>
+                              <a routerLink="home" title="Instagram"><i class="fab fa-instagram  px-2"></i></a>
+                            </div>
+                          
+                        </li>
+                    </ul>
+              </div>
+      </div>
+     
+  </nav>

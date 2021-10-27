@@ -1,0 +1,16 @@
+.main {
+    margin-top:7%;
+  }
+  .image {
+    padding: 10px;
+    border:7px solid rgb(201, 198, 198);
+    width:75%;
+  }
+ 
+  .personal {
+    border:1px solid white;
+  }
+  span{
+      color: white !important;;
+      padding-right: 20px;
+  }
